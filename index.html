@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    <title>forkify // Search over 1,000,000 recipes</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header">
+        <img src="img/logo.png" alt="forkify logo" class="header__image" />
+        <form action="#" class="search">
+          <input
+            placeholder="Search over 1,00,000 recipies ...."
+            class="search__input"
+          />
+          <button class="btn search__btn" name="myButton">
+            <svg class="search__icon">
+              <use href="img/icons.svg#icon-magnifying-glass"></use>
+            </svg>
+            <span>Search</span>
+          </button>
+        </form>
+        <div class="likes">
+          <div class="likes__field">
+            <svg class="likes__icon">
+              <use href="img/icons.svg#icon-heart"></use>
+            </svg>
+          </div>
+          <div class="likes__panel"><ul class="likes__list"></ul></div>
+        </div>
+      </header>
+      <div class="results">
+        <ul class="results__list"></ul>
+        <div class="results__pages"></div>
+      </div>
+      <div class="recipes"></div>
+      <div class="shopping">
+        <h2 class="heading-2 u-margin-bottom-small">my shopping list</h2>
+        <ul class="shopping__list"></ul>
+        <div class="copyright">
+          &copy; by Jonas Schmedtmann. Powered by
+          <a href="http://food2fork.com" target="_blank" class="link"
+            >Food2Fork.com</a
+          >.
+        </div>
+      </div>
+    </main>
+    <script src="js/bundle.js"></script>
+  </body>
+</html>
